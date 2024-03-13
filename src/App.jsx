@@ -1,22 +1,19 @@
 
-import Header from '../Component/Header'
-import Footer from './Component/Footer'
-import Contact from './Component/Contact'
-import Home from './Component/Home'
-import Services from './Component/Services'
-import Tracking from './Component/Tracking'
-import React, {useEffect} from 'react';
+import Header from './Component/Header';
+import Footer from './Component/Footer';
+import Contact from './Component/Contact';
+import Home from './Component/Home';
+import Services from './Component/Services';
+import Tracking from './Component/Tracking';
+import React,{useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      // Global settings for AOS (optional)
-      duration: 3000
-    });
-  }, []); // Ensure this useEffect runs only once after component mount
+    AOS.init({duration: 2000 }); // Global settings for AOS (optional)
+  }, []) // Ensure this useEffect runs only once after component mount
   return (
     <>
     <Header/>
